@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import <SDPathKalmanFilter/SDPathKalmanFilter.h>
 
 /*
     This class is used for showing two paths:
@@ -13,8 +14,12 @@
  */
 @interface SDPathViewController : UIViewController <MKMapViewDelegate>
 
+@property (strong, nonatomic) SDPathKalmanFilter *pathKalmanFiler;
+
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) NSMutableArray *originalLocations;
 @property (strong, nonatomic) NSMutableArray *estimatedLocations;
+
+- (void)reloadView;
 
 @end

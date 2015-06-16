@@ -1,7 +1,31 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - ISO8601DateFormatter (0.7)
   - SDPathKalmanFilter (0.1.0)
 
 DEPENDENCIES:
+  - BlocksKit (~> 2.2)
+  - CocoaLumberjack (~> 1.8)
+  - ISO8601DateFormatter
   - SDPathKalmanFilter (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,6 +33,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
   SDPathKalmanFilter: c8aefef327e1a33f56a0a443396ebff7962c8594
 
 COCOAPODS: 0.37.2

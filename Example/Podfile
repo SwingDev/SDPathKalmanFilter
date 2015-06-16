@@ -3,10 +3,14 @@ use_frameworks!
 
 target 'SDPathKalmanFilter_Example', :exclusive => true do
   pod "SDPathKalmanFilter", :path => "../"
+  pod 'CocoaLumberjack', '~> 1.8'
+  pod 'BlocksKit', '~> 2.2'
+  pod 'ISO8601DateFormatter'
 end
 
 target 'SDPathKalmanFilter_Tests', :exclusive => true do
   pod "SDPathKalmanFilter", :path => "../"
-
-  
+  pod 'CocoaLumberjack', '~> 1.8'
+  pod 'BlocksKit', '~> 2.2'
+  pod 'ISO8601DateFormatter'
 end

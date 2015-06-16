@@ -6,13 +6,6 @@
 //  Copyright (c) 2014 Marek Matulski. All rights reserved.
 //
 #import "SDViewController.h"
-#import <SDPathKalmanFilter/SDPathKalmanFilter.h>
-
-@interface SDViewController ()
-
-@property(strong, nonatomic) SDPathKalmanFilter *pathKalmanFiler;
-
-@end
 
 @implementation SDViewController
 
@@ -21,7 +14,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    self.pathKalmanFiler = [[SDPathKalmanFilter alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning

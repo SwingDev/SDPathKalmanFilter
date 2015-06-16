@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+
+    #import <CocoaLumberjack/DDLog.h>
+
+    static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 #endif
