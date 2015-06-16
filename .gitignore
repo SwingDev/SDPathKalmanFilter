@@ -8,6 +8,9 @@
 *.cmxs
 *.cmxa
 
+#Pods
+Example/Pods/
+
 # ocamlbuild working directory
 _build/
 
