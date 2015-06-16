@@ -7,432 +7,423 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E93E9002FD7D83A508EB421 /* Pods-SDPathKalmanFilter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 139F8DCB763156F4811B9EF3 /* Pods-SDPathKalmanFilter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11577EBDDE33AACFDD76E586 /* SDPathKalmanFilter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CE9DC565EB6BA3F60324 /* SDPathKalmanFilter.bundle */; };
-		4040BFFCFB987EDD279AA6A5 /* Pods-SDPathKalmanFilter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4066B5846A2DF887C398871B /* Pods-SDPathKalmanFilter_Example-dummy.m */; };
-		438792C89EA8060C512C6198 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF314EA9A60DCF8EE8288D /* ReplaceMe.m */; };
-		50351844A5CC295A98C2F5AF /* Pods-SDPathKalmanFilter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C433F1D5763BA729E658 /* Pods-SDPathKalmanFilter_Tests-dummy.m */; };
-		57DF56A4210C73B896FB5567 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DDCFE942A7CB30B06BAD05 /* Foundation.framework */; };
-		5F856711C768BAEF997C3A72 /* Pods-SDPathKalmanFilter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E445BB4608A57F55F460E0CA /* Pods-SDPathKalmanFilter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74B6BE0976FB56B8A1A0F1BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DDCFE942A7CB30B06BAD05 /* Foundation.framework */; };
-		78765963DAC5C0FF1A034D8D /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C71EC7DC9FE4EAE0BD3DC /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */; };
-		8640CF6DE122A9F3EEA086EF /* SDPathKalmanFilter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4313D7301F0037DEFC0A592A /* SDPathKalmanFilter.bundle */; };
-		B75E6FF701731D92097142DB /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5C7F73730DA5EE64F7BC2A /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF32CB893316FB7331373950 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF314EA9A60DCF8EE8288D /* ReplaceMe.m */; };
-		C90198CAF0B8FF52D065A1D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DDCFE942A7CB30B06BAD05 /* Foundation.framework */; };
-		D48B2B154ACF99A04B297617 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 446C3B2B01222280DFF1B24F /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */; };
-		F4055E51181D86324007F15B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DDCFE942A7CB30B06BAD05 /* Foundation.framework */; };
-		FAB9805EB374F996E50CAE2E /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCA3899E976EDDCD739F315 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0083D54C316159DB15881199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF2974836BC469814DF0304 /* Foundation.framework */; };
+		1B56E9836C49CC345248D7AC /* SDPathKalmanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A66A6A50A6E8221F53FEE2 /* SDPathKalmanFilter.m */; };
+		3B5A7A17F53155157397EB05 /* Pods-SDPathKalmanFilter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526117D5AB7F23CCD7CC21 /* Pods-SDPathKalmanFilter_Example-dummy.m */; };
+		3BC18EDD020054AEF6A978B0 /* SDMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8534B47284E4A739BBAAAF /* SDMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439A8650BCDC1C4F5AD0009C /* Pods-SDPathKalmanFilter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AA62DECDC392516D0546C5 /* Pods-SDPathKalmanFilter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44397B2838C0E6DC24E46523 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF2974836BC469814DF0304 /* Foundation.framework */; };
+		4B1F50DBADBF9093B1498E07 /* SDPathKalmanFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEB09C92745414CB4632F3F /* SDPathKalmanFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BC061DC5DBC5562CB5BF770 /* SDPathKalmanFilter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 64F3F962D36E9A464926F5CD /* SDPathKalmanFilter.bundle */; };
+		5A947A8CA74A5A6AF3498631 /* SDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 520F1257B088E62CC4DB0622 /* SDMatrix.m */; };
+		6F9C95EAC3ACD55E712B42E2 /* SDKalmanFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 472EA7D634A8FC9484F5EE9C /* SDKalmanFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		704F2A7D5D272A7E97F49DEB /* SDPathKalmanFilter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4DF3728A6CA6A8FCBF68FA8 /* SDPathKalmanFilter.bundle */; };
+		84EDB249B60F232CEDE59F90 /* SDKalmanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F28D56ACE5F0DBF6DE9FB0 /* SDKalmanFilter.m */; };
+		8811EB2B11D53CDB97E8F5AF /* SDKalmanFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 472EA7D634A8FC9484F5EE9C /* SDKalmanFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8821475E7FE5AF9959155502 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1256E9B010BCE9CD4B1CC79 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */; };
+		93C990B2934070FEF898D6C5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B1BDFB3FC6E1B98FF06B76 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFE2FDA32E1B2E5AD2A440D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF2974836BC469814DF0304 /* Foundation.framework */; };
+		A18CE42797F7D8C1969AD7CA /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C73DF1300153B27BFE82825 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */; };
+		A531B699632E236D58DD927A /* SDKalmanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F28D56ACE5F0DBF6DE9FB0 /* SDKalmanFilter.m */; };
+		B60A2648624490971458F1E9 /* SDPathKalmanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A66A6A50A6E8221F53FEE2 /* SDPathKalmanFilter.m */; };
+		B671F4014EA4E178F4562AC7 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB65F3626692637A8B639D65 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2AF9D75B0692827EBC9601B /* Pods-SDPathKalmanFilter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F23723C3E12D7CBCB41A1208 /* Pods-SDPathKalmanFilter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B2277E92A09CDD81E835FD /* Pods-SDPathKalmanFilter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B832AD8D75CFF55A905E59 /* Pods-SDPathKalmanFilter_Tests-dummy.m */; };
+		DACD674CBC3BDCFEBD9EEF00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF2974836BC469814DF0304 /* Foundation.framework */; };
+		DCF1128012473EB6FF872F46 /* SDPathKalmanFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEB09C92745414CB4632F3F /* SDPathKalmanFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F8220C776F091059DA73FA /* SDMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8534B47284E4A739BBAAAF /* SDMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F93C18962F2932598EF8F920 /* SDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 520F1257B088E62CC4DB0622 /* SDMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EAF10F1AC53568F7E2D12D /* PBXContainerItemProxy */ = {
+		1EAFDA8277C76EBD260E4325 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5693478361D2C8D12A409044 /* Project object */;
+			containerPortal = C829F304518C01230F2037A7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB80801CF64129C222A88755;
-			remoteInfo = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter";
+			remoteGlobalIDString = 2E0A3B220C22245C7F41ABD1;
+			remoteInfo = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
 		};
-		54E29ED953279CD84441F025 /* PBXContainerItemProxy */ = {
+		911EE091CA896C8DCB5DC3CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5693478361D2C8D12A409044 /* Project object */;
+			containerPortal = C829F304518C01230F2037A7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7ABEE007BC33BC6B45A4563E;
+			remoteGlobalIDString = 5E6A97B62412E76ED0627F71;
 			remoteInfo = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
 		};
-		96138E9F007724274EB9C93F /* PBXContainerItemProxy */ = {
+		D79D7653D4641E74490F807B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5693478361D2C8D12A409044 /* Project object */;
+			containerPortal = C829F304518C01230F2037A7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E745F447EE485A2E871CA2F5;
+			remoteGlobalIDString = 40142258FC4CE66EC3B0E7CB;
 			remoteInfo = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter";
 		};
-		9B5CFDEB54B49169B95D9183 /* PBXContainerItemProxy */ = {
+		EE7E42606E0469576C474E0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5693478361D2C8D12A409044 /* Project object */;
+			containerPortal = C829F304518C01230F2037A7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AC53385E85029E6B87C4749;
-			remoteInfo = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
+			remoteGlobalIDString = 32BC1976E86E04BFC465E5B9;
+			remoteInfo = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0164197002A0D15404C853E2 /* Pods_SDPathKalmanFilter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDPathKalmanFilter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08196882BD454E64C2132A68 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig"; sourceTree = "<group>"; };
-		08A8C433F1D5763BA729E658 /* Pods-SDPathKalmanFilter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Tests-dummy.m"; sourceTree = "<group>"; };
-		08E36EB5C1D86BAA81133408 /* Pods-SDPathKalmanFilter_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Tests-environment.h"; sourceTree = "<group>"; };
-		0FCA3899E976EDDCD739F315 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h"; sourceTree = "<group>"; };
-		11F0BE4F4A35F801CD176521 /* Pods-SDPathKalmanFilter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDPathKalmanFilter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		139F8DCB763156F4811B9EF3 /* Pods-SDPathKalmanFilter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-umbrella.h"; sourceTree = "<group>"; };
-		1B49568E3C3CAB07F0E08045 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist"; sourceTree = "<group>"; };
-		21DDCFE942A7CB30B06BAD05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		26FE3D0310170DF0F8C23349 /* SDPathKalmanFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDPathKalmanFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C63CAC683F55EF98EEB7711 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig"; sourceTree = "<group>"; };
-		317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig"; sourceTree = "<group>"; };
-		3A1BA6F41F0E7ACFF288540E /* Pods-SDPathKalmanFilter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Tests.modulemap"; sourceTree = "<group>"; };
-		4066B5846A2DF887C398871B /* Pods-SDPathKalmanFilter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Example-dummy.m"; sourceTree = "<group>"; };
-		4313D7301F0037DEFC0A592A /* SDPathKalmanFilter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDPathKalmanFilter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		446C3B2B01222280DFF1B24F /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m"; sourceTree = "<group>"; };
-		4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig"; sourceTree = "<group>"; };
-		4F5C7F73730DA5EE64F7BC2A /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h"; sourceTree = "<group>"; };
-		52A4D4A283DC367BBC683870 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A7C71EC7DC9FE4EAE0BD3DC /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m"; sourceTree = "<group>"; };
-		5DB88919A802F45311D7970A /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6E33CE9DC565EB6BA3F60324 /* SDPathKalmanFilter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDPathKalmanFilter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB82213D6008D796D687A40 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDPathKalmanFilter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		78D7EB5D75748D51056EF069 /* Pods-SDPathKalmanFilter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDPathKalmanFilter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7AA301F2B0617B585BB6974F /* Pods-SDPathKalmanFilter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8974B26879EF4553314C6E37 /* Pods-SDPathKalmanFilter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		98DC04032786A5348805C356 /* Pods_SDPathKalmanFilter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDPathKalmanFilter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E4F2C5B193B3580D78DF1EE /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap"; sourceTree = "<group>"; };
-		9F3A06889F59D625FEDC0C58 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1A38D2F3ED5B407AC1DCADF /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A74B632E14CA83CC8E84228F /* Pods-SDPathKalmanFilter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Example.modulemap"; sourceTree = "<group>"; };
-		A96878CDB1888BCEAD93981E /* Pods-SDPathKalmanFilter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AB7B8DC4645294CAFC21435A /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch"; sourceTree = "<group>"; };
-		ACC0F49562A6AFD36913A347 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B101C44ED091717E997A556A /* Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5F52A82481AF2E591909A9F /* Pods-SDPathKalmanFilter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Tests-resources.sh"; sourceTree = "<group>"; };
-		BFB6E61E9D89DC71B3618369 /* Pods-SDPathKalmanFilter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Example-resources.sh"; sourceTree = "<group>"; };
-		C30BEAACB7BF9963EFB0CCC5 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch"; sourceTree = "<group>"; };
-		CE2E4557706C14D5986E05BE /* SDPathKalmanFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDPathKalmanFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A44BC22E58F8CE02EF7676 /* Pods-SDPathKalmanFilter_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-environment.h"; sourceTree = "<group>"; };
-		D65E376855E4F3A5127B5DA3 /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA071E6DED9223FCB075A169 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap"; sourceTree = "<group>"; };
-		E0339EAFD97938441285836F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E445BB4608A57F55F460E0CA /* Pods-SDPathKalmanFilter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E5DF314EA9A60DCF8EE8288D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		0326EE961ED1CD5D8DD95AE6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		03526117D5AB7F23CCD7CC21 /* Pods-SDPathKalmanFilter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Example-dummy.m"; sourceTree = "<group>"; };
+		203CCF7D1B9691B2A33A1AF8 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig"; sourceTree = "<group>"; };
+		23D0009C2FEB5CD682A93275 /* Pods-SDPathKalmanFilter_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-environment.h"; sourceTree = "<group>"; };
+		3BEB09C92745414CB4632F3F /* SDPathKalmanFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDPathKalmanFilter.h; sourceTree = "<group>"; };
+		3C73DF1300153B27BFE82825 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m"; sourceTree = "<group>"; };
+		3DAD26F9D755E2B184C9BC93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BECC0C1F3F4A921E42C81F /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch"; sourceTree = "<group>"; };
+		45F28D56ACE5F0DBF6DE9FB0 /* SDKalmanFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDKalmanFilter.m; sourceTree = "<group>"; };
+		4662C45980DB11620FB7E06C /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		472EA7D634A8FC9484F5EE9C /* SDKalmanFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDKalmanFilter.h; sourceTree = "<group>"; };
+		49B1BDFB3FC6E1B98FF06B76 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h"; sourceTree = "<group>"; };
+		520F1257B088E62CC4DB0622 /* SDMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDMatrix.m; sourceTree = "<group>"; };
+		59E5879806A5A3E04E8A96B9 /* Pods-SDPathKalmanFilter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDPathKalmanFilter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E0C9D74CE8DFE31952A0C2C /* Pods-SDPathKalmanFilter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Example-resources.sh"; sourceTree = "<group>"; };
+		5ECDA11E8EF983496480DA7A /* Pods_SDPathKalmanFilter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDPathKalmanFilter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B832AD8D75CFF55A905E59 /* Pods-SDPathKalmanFilter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDPathKalmanFilter_Tests-dummy.m"; sourceTree = "<group>"; };
+		64F3F962D36E9A464926F5CD /* SDPathKalmanFilter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDPathKalmanFilter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		739A4595D92B0AC1D9649568 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap"; sourceTree = "<group>"; };
+		754A929C9C4E52055762F88E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C9E536C5E2EA12FEAB177CD /* SDPathKalmanFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDPathKalmanFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig"; sourceTree = "<group>"; };
+		7FE13FE76802F527B99EA5C3 /* Pods-SDPathKalmanFilter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDPathKalmanFilter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84390BAE8CE54FE23A80373E /* Pods-SDPathKalmanFilter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Tests.modulemap"; sourceTree = "<group>"; };
+		8508497DA75C41A7C4F66092 /* SDPathKalmanFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDPathKalmanFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F433E94623E203D6AB911B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist"; sourceTree = "<group>"; };
+		8E74363139996F0F27DE09E5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig"; sourceTree = "<group>"; };
+		953A668C5813F2D52F43ED2A /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		96AA62DECDC392516D0546C5 /* Pods-SDPathKalmanFilter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-umbrella.h"; sourceTree = "<group>"; };
+		9728CE586B1E7FE89CB53D88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A451BF17178BFC0FD7B6C097 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch"; sourceTree = "<group>"; };
+		AD9C3FDE5CBDA2094E4472AA /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap"; sourceTree = "<group>"; };
+		AF8534B47284E4A739BBAAAF /* SDMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDMatrix.h; sourceTree = "<group>"; };
+		B1BB7C15B78E26925A305273 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDPathKalmanFilter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B547825B603AA279BD0C2BA7 /* Pods-SDPathKalmanFilter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B899260876325956131A6B07 /* Pods-SDPathKalmanFilter_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Tests-environment.h"; sourceTree = "<group>"; };
+		C1256E9B010BCE9CD4B1CC79 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m"; sourceTree = "<group>"; };
+		C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig"; sourceTree = "<group>"; };
+		C4DF3728A6CA6A8FCBF68FA8 /* SDPathKalmanFilter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDPathKalmanFilter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71E7C7B931F0335602D6803 /* Pods-SDPathKalmanFilter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDPathKalmanFilter_Example.modulemap"; sourceTree = "<group>"; };
+		D975686DB3F888CCB2548252 /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDPathKalmanFilter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DD933BB1176A5A6F5C191E1E /* Pods-SDPathKalmanFilter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E3A66A6A50A6E8221F53FEE2 /* SDPathKalmanFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDPathKalmanFilter.m; sourceTree = "<group>"; };
+		E5C83598705E7A65081E170F /* Pods_SDPathKalmanFilter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDPathKalmanFilter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB65F3626692637A8B639D65 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h"; path = "../Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h"; sourceTree = "<group>"; };
+		F21B38322B69192A59934249 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F23723C3E12D7CBCB41A1208 /* Pods-SDPathKalmanFilter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDPathKalmanFilter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F961A533E4C1EA5AA4B36918 /* Pods-SDPathKalmanFilter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FCED20EFD67ABF3CBA0EDFA1 /* Pods-SDPathKalmanFilter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDPathKalmanFilter_Tests-resources.sh"; sourceTree = "<group>"; };
+		FFF2974836BC469814DF0304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2215FF460A062B7C1A35D49A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C90198CAF0B8FF52D065A1D1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		249A4F95C04660A3A1A749B5 /* Frameworks */ = {
+		42ADA2AC1EF1843904D730B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40D00E7A3A81E9F83AF92675 /* Frameworks */ = {
+		4752FBE10AE00FDF935A2CF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4055E51181D86324007F15B /* Foundation.framework in Frameworks */,
+				0083D54C316159DB15881199 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42DC3C72820C59C370F45D82 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57DF56A4210C73B896FB5567 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5601663DBA4F4AC672C57D92 /* Frameworks */ = {
+		4DA3EC138558E9F68C8738F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9824ADA6BE8F1578E8590847 /* Frameworks */ = {
+		8CE67C82A3DBC3CB076B6B31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B6BE0976FB56B8A1A0F1BF /* Foundation.framework in Frameworks */,
+				DACD674CBC3BDCFEBD9EEF00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F838A11F093B80BF1B77C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFE2FDA32E1B2E5AD2A440D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBDAD051F14D6F902AAE7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44397B2838C0E6DC24E46523 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F95C8ECDD8095D056A3773E /* Frameworks */ = {
+		023EF95B9A3F0A79809455D3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB4BDCC1D8C0EA8407B5B8E1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		20404DB473D180A3A84EDE5C /* Pods-SDPathKalmanFilter_Example */ = {
-			isa = PBXGroup;
-			children = (
-				ACC0F49562A6AFD36913A347 /* Info.plist */,
-				A74B632E14CA83CC8E84228F /* Pods-SDPathKalmanFilter_Example.modulemap */,
-				78D7EB5D75748D51056EF069 /* Pods-SDPathKalmanFilter_Example-acknowledgements.markdown */,
-				11F0BE4F4A35F801CD176521 /* Pods-SDPathKalmanFilter_Example-acknowledgements.plist */,
-				4066B5846A2DF887C398871B /* Pods-SDPathKalmanFilter_Example-dummy.m */,
-				D2A44BC22E58F8CE02EF7676 /* Pods-SDPathKalmanFilter_Example-environment.h */,
-				8974B26879EF4553314C6E37 /* Pods-SDPathKalmanFilter_Example-frameworks.sh */,
-				BFB6E61E9D89DC71B3618369 /* Pods-SDPathKalmanFilter_Example-resources.sh */,
-				139F8DCB763156F4811B9EF3 /* Pods-SDPathKalmanFilter_Example-umbrella.h */,
-				A1A38D2F3ED5B407AC1DCADF /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */,
-				7AA301F2B0617B585BB6974F /* Pods-SDPathKalmanFilter_Example.release.xcconfig */,
-			);
-			name = "Pods-SDPathKalmanFilter_Example";
-			path = "Target Support Files/Pods-SDPathKalmanFilter_Example";
-			sourceTree = "<group>";
-		};
-		81954083D7AC239162C31741 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B8B4D90815ED68C58CF8380A /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		8C13A973FA5D49E9A7FB09F8 /* SDPathKalmanFilter */ = {
-			isa = PBXGroup;
-			children = (
-				81954083D7AC239162C31741 /* Pod */,
-				B0C395EB6AFEE577F93D68BE /* Support Files */,
-			);
-			name = SDPathKalmanFilter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9A605EA37E1DBF4A4526214A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				20404DB473D180A3A84EDE5C /* Pods-SDPathKalmanFilter_Example */,
-				C3C3F29A39AC4E600011EF78 /* Pods-SDPathKalmanFilter_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9FC0C0CC1FFA4536F6C29DFC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				98DC04032786A5348805C356 /* Pods_SDPathKalmanFilter_Example.framework */,
-				0164197002A0D15404C853E2 /* Pods_SDPathKalmanFilter_Tests.framework */,
-				4313D7301F0037DEFC0A592A /* SDPathKalmanFilter.bundle */,
-				6E33CE9DC565EB6BA3F60324 /* SDPathKalmanFilter.bundle */,
-				26FE3D0310170DF0F8C23349 /* SDPathKalmanFilter.framework */,
-				CE2E4557706C14D5986E05BE /* SDPathKalmanFilter.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AB4BDCC1D8C0EA8407B5B8E1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				21DDCFE942A7CB30B06BAD05 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B0C395EB6AFEE577F93D68BE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0339EAFD97938441285836F /* Info.plist */,
-				1B49568E3C3CAB07F0E08045 /* Info.plist */,
-				9E4F2C5B193B3580D78DF1EE /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap */,
-				08196882BD454E64C2132A68 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig */,
-				4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */,
-				446C3B2B01222280DFF1B24F /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */,
-				AB7B8DC4645294CAFC21435A /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch */,
-				0FCA3899E976EDDCD739F315 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */,
-				DA071E6DED9223FCB075A169 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap */,
-				2C63CAC683F55EF98EEB7711 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig */,
-				317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */,
-				5A7C71EC7DC9FE4EAE0BD3DC /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */,
-				C30BEAACB7BF9963EFB0CCC5 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch */,
-				4F5C7F73730DA5EE64F7BC2A /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */,
+				754A929C9C4E52055762F88E /* Info.plist */,
+				88F433E94623E203D6AB911B /* Info.plist */,
+				AD9C3FDE5CBDA2094E4472AA /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap */,
+				8E74363139996F0F27DE09E5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.xcconfig */,
+				C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */,
+				3C73DF1300153B27BFE82825 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m */,
+				A451BF17178BFC0FD7B6C097 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch */,
+				49B1BDFB3FC6E1B98FF06B76 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h */,
+				739A4595D92B0AC1D9649568 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap */,
+				203CCF7D1B9691B2A33A1AF8 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.xcconfig */,
+				7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */,
+				C1256E9B010BCE9CD4B1CC79 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m */,
+				44BECC0C1F3F4A921E42C81F /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch */,
+				EB65F3626692637A8B639D65 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
 			sourceTree = "<group>";
 		};
-		B8B4D90815ED68C58CF8380A /* Classes */ = {
+		0D21470E99C9AF4C4F0D267A /* Pods-SDPathKalmanFilter_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E5DF314EA9A60DCF8EE8288D /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C24271C39A60016016675DAD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8C13A973FA5D49E9A7FB09F8 /* SDPathKalmanFilter */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C3C3F29A39AC4E600011EF78 /* Pods-SDPathKalmanFilter_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				52A4D4A283DC367BBC683870 /* Info.plist */,
-				3A1BA6F41F0E7ACFF288540E /* Pods-SDPathKalmanFilter_Tests.modulemap */,
-				B101C44ED091717E997A556A /* Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown */,
-				6EB82213D6008D796D687A40 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.plist */,
-				08A8C433F1D5763BA729E658 /* Pods-SDPathKalmanFilter_Tests-dummy.m */,
-				08E36EB5C1D86BAA81133408 /* Pods-SDPathKalmanFilter_Tests-environment.h */,
-				A96878CDB1888BCEAD93981E /* Pods-SDPathKalmanFilter_Tests-frameworks.sh */,
-				B5F52A82481AF2E591909A9F /* Pods-SDPathKalmanFilter_Tests-resources.sh */,
-				E445BB4608A57F55F460E0CA /* Pods-SDPathKalmanFilter_Tests-umbrella.h */,
-				D65E376855E4F3A5127B5DA3 /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */,
-				5DB88919A802F45311D7970A /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */,
+				9728CE586B1E7FE89CB53D88 /* Info.plist */,
+				84390BAE8CE54FE23A80373E /* Pods-SDPathKalmanFilter_Tests.modulemap */,
+				F21B38322B69192A59934249 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.markdown */,
+				B1BB7C15B78E26925A305273 /* Pods-SDPathKalmanFilter_Tests-acknowledgements.plist */,
+				61B832AD8D75CFF55A905E59 /* Pods-SDPathKalmanFilter_Tests-dummy.m */,
+				B899260876325956131A6B07 /* Pods-SDPathKalmanFilter_Tests-environment.h */,
+				DD933BB1176A5A6F5C191E1E /* Pods-SDPathKalmanFilter_Tests-frameworks.sh */,
+				FCED20EFD67ABF3CBA0EDFA1 /* Pods-SDPathKalmanFilter_Tests-resources.sh */,
+				F23723C3E12D7CBCB41A1208 /* Pods-SDPathKalmanFilter_Tests-umbrella.h */,
+				953A668C5813F2D52F43ED2A /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */,
+				D975686DB3F888CCB2548252 /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */,
 			);
 			name = "Pods-SDPathKalmanFilter_Tests";
 			path = "Target Support Files/Pods-SDPathKalmanFilter_Tests";
 			sourceTree = "<group>";
 		};
-		C6225D83E3270C974C9009A0 = {
+		123AAC86E2DEA9689D016BDF /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9F3A06889F59D625FEDC0C58 /* Podfile */,
-				C24271C39A60016016675DAD /* Development Pods */,
-				0F95C8ECDD8095D056A3773E /* Frameworks */,
-				9FC0C0CC1FFA4536F6C29DFC /* Products */,
-				9A605EA37E1DBF4A4526214A /* Targets Support Files */,
+				F02A43120C4AAC90C8F59F2C /* Classes */,
 			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4D5F0BAC0AE5892D4120DBE2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2C429E25E8F8E77E555B6 /* SDPathKalmanFilter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7D6357E8BB709F5986B73EE5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2974836BC469814DF0304 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8FC2C429E25E8F8E77E555B6 /* SDPathKalmanFilter */ = {
+			isa = PBXGroup;
+			children = (
+				123AAC86E2DEA9689D016BDF /* Pod */,
+				023EF95B9A3F0A79809455D3 /* Support Files */,
+			);
+			name = SDPathKalmanFilter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		90EDCB6F527F5BF7DC58B29A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D6357E8BB709F5986B73EE5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8934FB3F0B2ADD66425D2D4 = {
+			isa = PBXGroup;
+			children = (
+				0326EE961ED1CD5D8DD95AE6 /* Podfile */,
+				4D5F0BAC0AE5892D4120DBE2 /* Development Pods */,
+				90EDCB6F527F5BF7DC58B29A /* Frameworks */,
+				D51521A550B293053683DB45 /* Products */,
+				BEAFF8DD19CB2E0DAD8C4A5B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAFF8DD19CB2E0DAD8C4A5B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF8248BFA24496FBAB5639 /* Pods-SDPathKalmanFilter_Example */,
+				0D21470E99C9AF4C4F0D267A /* Pods-SDPathKalmanFilter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D51521A550B293053683DB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5C83598705E7A65081E170F /* Pods_SDPathKalmanFilter_Example.framework */,
+				5ECDA11E8EF983496480DA7A /* Pods_SDPathKalmanFilter_Tests.framework */,
+				C4DF3728A6CA6A8FCBF68FA8 /* SDPathKalmanFilter.bundle */,
+				64F3F962D36E9A464926F5CD /* SDPathKalmanFilter.bundle */,
+				8508497DA75C41A7C4F66092 /* SDPathKalmanFilter.framework */,
+				7C9E536C5E2EA12FEAB177CD /* SDPathKalmanFilter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F02A43120C4AAC90C8F59F2C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				472EA7D634A8FC9484F5EE9C /* SDKalmanFilter.h */,
+				45F28D56ACE5F0DBF6DE9FB0 /* SDKalmanFilter.m */,
+				AF8534B47284E4A739BBAAAF /* SDMatrix.h */,
+				520F1257B088E62CC4DB0622 /* SDMatrix.m */,
+				3BEB09C92745414CB4632F3F /* SDPathKalmanFilter.h */,
+				E3A66A6A50A6E8221F53FEE2 /* SDPathKalmanFilter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7AF8248BFA24496FBAB5639 /* Pods-SDPathKalmanFilter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD26F9D755E2B184C9BC93 /* Info.plist */,
+				C71E7C7B931F0335602D6803 /* Pods-SDPathKalmanFilter_Example.modulemap */,
+				7FE13FE76802F527B99EA5C3 /* Pods-SDPathKalmanFilter_Example-acknowledgements.markdown */,
+				59E5879806A5A3E04E8A96B9 /* Pods-SDPathKalmanFilter_Example-acknowledgements.plist */,
+				03526117D5AB7F23CCD7CC21 /* Pods-SDPathKalmanFilter_Example-dummy.m */,
+				23D0009C2FEB5CD682A93275 /* Pods-SDPathKalmanFilter_Example-environment.h */,
+				F961A533E4C1EA5AA4B36918 /* Pods-SDPathKalmanFilter_Example-frameworks.sh */,
+				5E0C9D74CE8DFE31952A0C2C /* Pods-SDPathKalmanFilter_Example-resources.sh */,
+				96AA62DECDC392516D0546C5 /* Pods-SDPathKalmanFilter_Example-umbrella.h */,
+				4662C45980DB11620FB7E06C /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */,
+				B547825B603AA279BD0C2BA7 /* Pods-SDPathKalmanFilter_Example.release.xcconfig */,
+			);
+			name = "Pods-SDPathKalmanFilter_Example";
+			path = "Target Support Files/Pods-SDPathKalmanFilter_Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12E9D8B7AE140237F1B7A888 /* Headers */ = {
+		186D6802BBB8058F1A151F33 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB9805EB374F996E50CAE2E /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h in Headers */,
+				93C990B2934070FEF898D6C5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-umbrella.h in Headers */,
+				8811EB2B11D53CDB97E8F5AF /* SDKalmanFilter.h in Headers */,
+				3BC18EDD020054AEF6A978B0 /* SDMatrix.h in Headers */,
+				4B1F50DBADBF9093B1498E07 /* SDPathKalmanFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84A00BC1884C90AEEC3BA770 /* Headers */ = {
+		35C13A7DCEE8972F6410D485 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F856711C768BAEF997C3A72 /* Pods-SDPathKalmanFilter_Tests-umbrella.h in Headers */,
+				D2AF9D75B0692827EBC9601B /* Pods-SDPathKalmanFilter_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C74ADAFCCEAD7A67F442AFE5 /* Headers */ = {
+		81C203C4916D7DECD7AAEA2D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75E6FF701731D92097142DB /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h in Headers */,
+				439A8650BCDC1C4F5AD0009C /* Pods-SDPathKalmanFilter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E81BDE5D2F9D0CF39FCA417B /* Headers */ = {
+		D8F9113BA6483A9403EF5112 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E93E9002FD7D83A508EB421 /* Pods-SDPathKalmanFilter_Example-umbrella.h in Headers */,
+				B671F4014EA4E178F4562AC7 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-umbrella.h in Headers */,
+				6F9C95EAC3ACD55E712B42E2 /* SDKalmanFilter.h in Headers */,
+				F0F8220C776F091059DA73FA /* SDMatrix.h in Headers */,
+				DCF1128012473EB6FF872F46 /* SDPathKalmanFilter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7ABEE007BC33BC6B45A4563E /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */ = {
+		144F104D8FD5E13707C1D528 /* Pods-SDPathKalmanFilter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DFF8D4B6A39CE3D1D9A67E4 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter" */;
+			buildConfigurationList = 360FCA75FE5F8DBA6BB897AE /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example" */;
 			buildPhases = (
-				A94539E551F40C9CB9339E8D /* Sources */,
-				5601663DBA4F4AC672C57D92 /* Frameworks */,
-				46248315AAA6E225A9744518 /* Resources */,
+				E82CC2DEC17001580DA18D6C /* Sources */,
+				9DBDAD051F14D6F902AAE7C7 /* Frameworks */,
+				81C203C4916D7DECD7AAEA2D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
-			productName = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
-			productReference = 6E33CE9DC565EB6BA3F60324 /* SDPathKalmanFilter.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		9AC53385E85029E6B87C4749 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 39813D2B77725AA06073ABAF /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter" */;
-			buildPhases = (
-				D7FA6FDB072CD6FB702BC338 /* Sources */,
-				9824ADA6BE8F1578E8590847 /* Frameworks */,
-				FA5F5B4B3C0FCF86EF6DE9FC /* Resources */,
-				12E9D8B7AE140237F1B7A888 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1C78487ADC625CD72D1E293 /* PBXTargetDependency */,
-			);
-			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
-			productName = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
-			productReference = CE2E4557706C14D5986E05BE /* SDPathKalmanFilter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AB2756E0181A206D20D67AF0 /* Pods-SDPathKalmanFilter_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E75AAD54E07DAB87A770D729 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example" */;
-			buildPhases = (
-				B0526B6280ED0B63F1E37F63 /* Sources */,
-				42DC3C72820C59C370F45D82 /* Frameworks */,
-				E81BDE5D2F9D0CF39FCA417B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21E2DB5776FD8C2E8F8DD69B /* PBXTargetDependency */,
+				A542A0BB0473B11ED3D96ED0 /* PBXTargetDependency */,
 			);
 			name = "Pods-SDPathKalmanFilter_Example";
 			productName = "Pods-SDPathKalmanFilter_Example";
-			productReference = 98DC04032786A5348805C356 /* Pods_SDPathKalmanFilter_Example.framework */;
+			productReference = E5C83598705E7A65081E170F /* Pods_SDPathKalmanFilter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AF89487B5518FA98D70AB12D /* Pods-SDPathKalmanFilter_Tests */ = {
+		2E0A3B220C22245C7F41ABD1 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC0AA48F902C3AB75A1B04A /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests" */;
+			buildConfigurationList = 1A5D95642D9AE7BB9F0B1F9D /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter" */;
 			buildPhases = (
-				AF8F908EA0AF3325B4644B8D /* Sources */,
-				2215FF460A062B7C1A35D49A /* Frameworks */,
-				84A00BC1884C90AEEC3BA770 /* Headers */,
+				72808231C44F0DBA9A27AFD6 /* Sources */,
+				8CE67C82A3DBC3CB076B6B31 /* Frameworks */,
+				10AF2BAADCC7652D1B23AF2B /* Resources */,
+				186D6802BBB8058F1A151F33 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F09B0BD5FCDFBB415C7EAC4B /* PBXTargetDependency */,
+				5BC6FF7A04BE89D0A9469A4F /* PBXTargetDependency */,
 			);
-			name = "Pods-SDPathKalmanFilter_Tests";
-			productName = "Pods-SDPathKalmanFilter_Tests";
-			productReference = 0164197002A0D15404C853E2 /* Pods_SDPathKalmanFilter_Tests.framework */;
+			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
+			productName = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
+			productReference = 7C9E536C5E2EA12FEAB177CD /* SDPathKalmanFilter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB80801CF64129C222A88755 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */ = {
+		32BC1976E86E04BFC465E5B9 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1229A0C9B37336415F9C6506 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter" */;
+			buildConfigurationList = 6D3ECC944F30873B7244CE97 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter" */;
 			buildPhases = (
-				B88CBC532D62BBF5588B1E8D /* Sources */,
-				40D00E7A3A81E9F83AF92675 /* Frameworks */,
-				C6C3B99044A5BAC6C8ED885E /* Resources */,
-				C74ADAFCCEAD7A67F442AFE5 /* Headers */,
+				60BE11B7666ABCAFD8F07A7A /* Sources */,
+				8F838A11F093B80BF1B77C37 /* Frameworks */,
+				41A1CE36C5922F0707B5D6E5 /* Resources */,
+				D8F9113BA6483A9403EF5112 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1164F514B582503EE506F179 /* PBXTargetDependency */,
+				200BD74D4547D9F3E047F38D /* PBXTargetDependency */,
 			);
 			name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter";
 			productName = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter";
-			productReference = 26FE3D0310170DF0F8C23349 /* SDPathKalmanFilter.framework */;
+			productReference = 8508497DA75C41A7C4F66092 /* SDPathKalmanFilter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E745F447EE485A2E871CA2F5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */ = {
+		40142258FC4CE66EC3B0E7CB /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9951E72C5B26D3135889AB6 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter" */;
+			buildConfigurationList = 1698989F8C7D2E00307C617D /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter" */;
 			buildPhases = (
-				2F4B27C3F1E68229D44DBB17 /* Sources */,
-				249A4F95C04660A3A1A749B5 /* Frameworks */,
-				D12F672D84C1644509C2C911 /* Resources */,
+				73EF8379407AB360B8B8C786 /* Sources */,
+				42ADA2AC1EF1843904D730B7 /* Frameworks */,
+				B081EE2561676802935F9107 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -440,154 +431,193 @@
 			);
 			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter";
 			productName = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter";
-			productReference = 4313D7301F0037DEFC0A592A /* SDPathKalmanFilter.bundle */;
+			productReference = C4DF3728A6CA6A8FCBF68FA8 /* SDPathKalmanFilter.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		5E6A97B62412E76ED0627F71 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7563B08AD8A529DC15607E8 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter" */;
+			buildPhases = (
+				AE87E555AB399E5A047EB370 /* Sources */,
+				4DA3EC138558E9F68C8738F4 /* Frameworks */,
+				4698BE4CB7A5D56B2887B4BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
+			productName = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
+			productReference = 64F3F962D36E9A464926F5CD /* SDPathKalmanFilter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9B1A452CCF34F447D1B7214A /* Pods-SDPathKalmanFilter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D7114BB7D77BE00102FCB2 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests" */;
+			buildPhases = (
+				CA8A7763FEAA70D4DB333E68 /* Sources */,
+				4752FBE10AE00FDF935A2CF7 /* Frameworks */,
+				35C13A7DCEE8972F6410D485 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8DCFEC5FB95BA8DC38DEAB /* PBXTargetDependency */,
+			);
+			name = "Pods-SDPathKalmanFilter_Tests";
+			productName = "Pods-SDPathKalmanFilter_Tests";
+			productReference = 5ECDA11E8EF983496480DA7A /* Pods_SDPathKalmanFilter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5693478361D2C8D12A409044 /* Project object */ = {
+		C829F304518C01230F2037A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = B54A07CB36719225DC499743 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = E79E56DA43D8D4E8AAC3F4EC /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C6225D83E3270C974C9009A0;
-			productRefGroup = 9FC0C0CC1FFA4536F6C29DFC /* Products */;
+			mainGroup = B8934FB3F0B2ADD66425D2D4;
+			productRefGroup = D51521A550B293053683DB45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB2756E0181A206D20D67AF0 /* Pods-SDPathKalmanFilter_Example */,
-				9AC53385E85029E6B87C4749 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */,
-				E745F447EE485A2E871CA2F5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */,
-				AF89487B5518FA98D70AB12D /* Pods-SDPathKalmanFilter_Tests */,
-				CB80801CF64129C222A88755 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */,
-				7ABEE007BC33BC6B45A4563E /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */,
+				144F104D8FD5E13707C1D528 /* Pods-SDPathKalmanFilter_Example */,
+				2E0A3B220C22245C7F41ABD1 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */,
+				40142258FC4CE66EC3B0E7CB /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */,
+				9B1A452CCF34F447D1B7214A /* Pods-SDPathKalmanFilter_Tests */,
+				32BC1976E86E04BFC465E5B9 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */,
+				5E6A97B62412E76ED0627F71 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46248315AAA6E225A9744518 /* Resources */ = {
+		10AF2BAADCC7652D1B23AF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704F2A7D5D272A7E97F49DEB /* SDPathKalmanFilter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A1CE36C5922F0707B5D6E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC061DC5DBC5562CB5BF770 /* SDPathKalmanFilter.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4698BE4CB7A5D56B2887B4BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6C3B99044A5BAC6C8ED885E /* Resources */ = {
+		B081EE2561676802935F9107 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11577EBDDE33AACFDD76E586 /* SDPathKalmanFilter.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D12F672D84C1644509C2C911 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA5F5B4B3C0FCF86EF6DE9FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8640CF6DE122A9F3EEA086EF /* SDPathKalmanFilter.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F4B27C3F1E68229D44DBB17 /* Sources */ = {
+		60BE11B7666ABCAFD8F07A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8821475E7FE5AF9959155502 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m in Sources */,
+				A531B699632E236D58DD927A /* SDKalmanFilter.m in Sources */,
+				5A947A8CA74A5A6AF3498631 /* SDMatrix.m in Sources */,
+				B60A2648624490971458F1E9 /* SDPathKalmanFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72808231C44F0DBA9A27AFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18CE42797F7D8C1969AD7CA /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m in Sources */,
+				84EDB249B60F232CEDE59F90 /* SDKalmanFilter.m in Sources */,
+				F93C18962F2932598EF8F920 /* SDMatrix.m in Sources */,
+				1B56E9836C49CC345248D7AC /* SDPathKalmanFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EF8379407AB360B8B8C786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A94539E551F40C9CB9339E8D /* Sources */ = {
+		AE87E555AB399E5A047EB370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF8F908EA0AF3325B4644B8D /* Sources */ = {
+		CA8A7763FEAA70D4DB333E68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50351844A5CC295A98C2F5AF /* Pods-SDPathKalmanFilter_Tests-dummy.m in Sources */,
+				D2B2277E92A09CDD81E835FD /* Pods-SDPathKalmanFilter_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0526B6280ED0B63F1E37F63 /* Sources */ = {
+		E82CC2DEC17001580DA18D6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4040BFFCFB987EDD279AA6A5 /* Pods-SDPathKalmanFilter_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B88CBC532D62BBF5588B1E8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78765963DAC5C0FF1A034D8D /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-dummy.m in Sources */,
-				BF32CB893316FB7331373950 /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7FA6FDB072CD6FB702BC338 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D48B2B154ACF99A04B297617 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-dummy.m in Sources */,
-				438792C89EA8060C512C6198 /* ReplaceMe.m in Sources */,
+				3B5A7A17F53155157397EB05 /* Pods-SDPathKalmanFilter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1164F514B582503EE506F179 /* PBXTargetDependency */ = {
+		200BD74D4547D9F3E047F38D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter";
-			target = 7ABEE007BC33BC6B45A4563E /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */;
-			targetProxy = 54E29ED953279CD84441F025 /* PBXContainerItemProxy */;
+			target = 5E6A97B62412E76ED0627F71 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter */;
+			targetProxy = 911EE091CA896C8DCB5DC3CD /* PBXContainerItemProxy */;
 		};
-		21E2DB5776FD8C2E8F8DD69B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
-			target = 9AC53385E85029E6B87C4749 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */;
-			targetProxy = 9B5CFDEB54B49169B95D9183 /* PBXContainerItemProxy */;
-		};
-		D1C78487ADC625CD72D1E293 /* PBXTargetDependency */ = {
+		5BC6FF7A04BE89D0A9469A4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter";
-			target = E745F447EE485A2E871CA2F5 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */;
-			targetProxy = 96138E9F007724274EB9C93F /* PBXContainerItemProxy */;
+			target = 40142258FC4CE66EC3B0E7CB /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter */;
+			targetProxy = D79D7653D4641E74490F807B /* PBXContainerItemProxy */;
 		};
-		F09B0BD5FCDFBB415C7EAC4B /* PBXTargetDependency */ = {
+		A542A0BB0473B11ED3D96ED0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter";
+			target = 2E0A3B220C22245C7F41ABD1 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter */;
+			targetProxy = 1EAFDA8277C76EBD260E4325 /* PBXContainerItemProxy */;
+		};
+		BC8DCFEC5FB95BA8DC38DEAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter";
-			target = CB80801CF64129C222A88755 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */;
-			targetProxy = 46EAF10F1AC53568F7E2D12D /* PBXContainerItemProxy */;
+			target = 32BC1976E86E04BFC465E5B9 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter */;
+			targetProxy = EE7E42606E0469576C474E0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16C2902B75E5435F4EA4F88E /* Release */ = {
+		03890317E84EEC7B264AD08C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AA301F2B0617B585BB6974F /* Pods-SDPathKalmanFilter_Example.release.xcconfig */;
+			baseConfigurationReference = 7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -596,16 +626,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Pods-SDPathKalmanFilter_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SDPathKalmanFilter_Example;
+				PRODUCT_NAME = SDPathKalmanFilter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,64 +642,9 @@
 			};
 			name = Release;
 		};
-		578666949D73752FF9641EB2 /* Debug */ = {
+		1D5F6B5D9354FE0C52664F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5E39DF5FED0CF700C96AFAA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		86BC878FDBBE8217F152F080 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1A38D2F3ED5B407AC1DCADF /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Pods-SDPathKalmanFilter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SDPathKalmanFilter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		90A0D2362926C3E515FD99F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D65E376855E4F3A5127B5DA3 /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */;
+			baseConfigurationReference = 953A668C5813F2D52F43ED2A /* Pods-SDPathKalmanFilter_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -698,204 +671,7 @@
 			};
 			name = Debug;
 		};
-		9B4E009EA173002902417ABF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A2BADE87DB593723C658A502 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AD3F69DFD18B17179F8727A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		C55695070A76188F318E6C27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C6ECAAEF0CF786710F6E9DE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C740819AE8FC3A3E104D3734 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DB88919A802F45311D7970A /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests/Pods-SDPathKalmanFilter_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SDPathKalmanFilter_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CBBC06A1721E4EA20598AC6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9039A322CF5572F8B9FD66 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D101F79E72A061025628A41B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317EC8581E739B682EDBB698 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SDPathKalmanFilter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E1FCD566CA8BA83F348A2756 /* Debug */ = {
+		2BBE5A07F2259983E78A5CC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -934,73 +710,327 @@
 			};
 			name = Debug;
 		};
+		47A6DFB133B990CB5E9FBACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		795B02ED7A65DAA0E7B305DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8303AF60D52DCA5B7A122406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		88CF2EDCF74EF61277121033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D975686DB3F888CCB2548252 /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests/Pods-SDPathKalmanFilter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SDPathKalmanFilter_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CC6047D539B3ABCC3BE66A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A2D0AD2815EDD67DDFFA5E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1753F8064F7E36C62004EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B547825B603AA279BD0C2BA7 /* Pods-SDPathKalmanFilter_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Pods-SDPathKalmanFilter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SDPathKalmanFilter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C668213E23C71AC08F46E639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E42CE0B5098F207D213EF76 /* Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter/Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2CA784911D9B74C32935933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C469EB7A81F7C7A10DEBB1E6 /* Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-SDPathKalmanFilter_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SDPathKalmanFilter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E7E817E30CDC69891AD6C182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8D42B3DD9958E0A0CBB2731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4662C45980DB11620FB7E06C /* Pods-SDPathKalmanFilter_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SDPathKalmanFilter_Example/Pods-SDPathKalmanFilter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SDPathKalmanFilter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1229A0C9B37336415F9C6506 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter" */ = {
+		1698989F8C7D2E00307C617D /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2BADE87DB593723C658A502 /* Debug */,
-				C6ECAAEF0CF786710F6E9DE7 /* Release */,
+				E2CA784911D9B74C32935933 /* Debug */,
+				9CC6047D539B3ABCC3BE66A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39813D2B77725AA06073ABAF /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter" */ = {
+		1A5D95642D9AE7BB9F0B1F9D /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B4E009EA173002902417ABF /* Debug */,
-				CBBC06A1721E4EA20598AC6C /* Release */,
+				A2D0AD2815EDD67DDFFA5E8D /* Debug */,
+				47A6DFB133B990CB5E9FBACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DFF8D4B6A39CE3D1D9A67E4 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter" */ = {
+		360FCA75FE5F8DBA6BB897AE /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D101F79E72A061025628A41B /* Debug */,
-				5E39DF5FED0CF700C96AFAA3 /* Release */,
+				E8D42B3DD9958E0A0CBB2731 /* Debug */,
+				B1753F8064F7E36C62004EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC0AA48F902C3AB75A1B04A /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests" */ = {
+		6D3ECC944F30873B7244CE97 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90A0D2362926C3E515FD99F8 /* Debug */,
-				C740819AE8FC3A3E104D3734 /* Release */,
+				C668213E23C71AC08F46E639 /* Debug */,
+				03890317E84EEC7B264AD08C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B54A07CB36719225DC499743 /* Build configuration list for PBXProject "Pods" */ = {
+		B0D7114BB7D77BE00102FCB2 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1FCD566CA8BA83F348A2756 /* Debug */,
-				C55695070A76188F318E6C27 /* Release */,
+				1D5F6B5D9354FE0C52664F91 /* Debug */,
+				88CF2EDCF74EF61277121033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9951E72C5B26D3135889AB6 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example-SDPathKalmanFilter-SDPathKalmanFilter" */ = {
+		E7563B08AD8A529DC15607E8 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				578666949D73752FF9641EB2 /* Debug */,
-				AD3F69DFD18B17179F8727A9 /* Release */,
+				795B02ED7A65DAA0E7B305DD /* Debug */,
+				8303AF60D52DCA5B7A122406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E75AAD54E07DAB87A770D729 /* Build configuration list for PBXNativeTarget "Pods-SDPathKalmanFilter_Example" */ = {
+		E79E56DA43D8D4E8AAC3F4EC /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86BC878FDBBE8217F152F080 /* Debug */,
-				16C2902B75E5435F4EA4F88E /* Release */,
+				2BBE5A07F2259983E78A5CC8 /* Debug */,
+				E7E817E30CDC69891AD6C182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5693478361D2C8D12A409044 /* Project object */;
+	rootObject = C829F304518C01230F2037A7 /* Project object */;
 }

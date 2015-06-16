@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Marek Matulski. All rights reserved.
 //
 
-@import UIKit;
+@import UIKit;@class SDPathKalmanFilter;
 
 @interface SDViewController : UIViewController
 
