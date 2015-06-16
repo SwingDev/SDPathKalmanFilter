@@ -15,6 +15,8 @@
 
 + (instancetype)matrixWithNumberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns;
 
+- (void)setValue:(double)value n:(NSUInteger)n m:(NSUInteger)m;
+
 - (void)makeIdentity;
 
 @end

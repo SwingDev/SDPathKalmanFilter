@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E6A97B62412E76ED0627F71"
+               BlueprintIdentifier = "08B718A600F97B34C7535D8A"
                BuildableName = "SDPathKalmanFilter.bundle"
                BlueprintName = "Pods-SDPathKalmanFilter_Tests-SDPathKalmanFilter-SDPathKalmanFilter"
                ReferencedContainer = "container:Pods.xcodeproj">
