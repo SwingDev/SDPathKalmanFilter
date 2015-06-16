@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Marek Matulski. All rights reserved.
 //
 
-@import UIKit;
-
 @interface SDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
