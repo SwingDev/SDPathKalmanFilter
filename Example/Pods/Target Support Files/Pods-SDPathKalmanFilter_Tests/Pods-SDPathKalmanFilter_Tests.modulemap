@@ -1,0 +1,6 @@
+framework module Pods_SDPathKalmanFilter_Tests {
+  umbrella header "Pods-SDPathKalmanFilter_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
