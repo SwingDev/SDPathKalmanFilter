@@ -24,6 +24,8 @@
 		62DD29A25836347B2BFC340D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2F8C6E4C84B3E339C720 /* Main.storyboard */; };
 		92066D6A5A1FC491AACD6D34 /* Pods_SDPathKalmanFilter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5886B523A07CFBE37F4A8553 /* Pods_SDPathKalmanFilter_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9A039CB8444FEFE59FD54627 /* Pods_SDPathKalmanFilter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7523F477F4D389E83E7DDC2 /* Pods_SDPathKalmanFilter_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EABF8C2E1B3042A100F42F59 /* SDPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF8C2D1B3042A100F42F59 /* SDPathViewController.m */; };
+		EABF8C301B30436500F42F59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABF8C2F1B30436500F42F59 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		D9A8F2E57792F2FDDBA94D15 /* Pods-SDPathKalmanFilter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDPathKalmanFilter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDPathKalmanFilter_Tests/Pods-SDPathKalmanFilter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB40F21044C8777ABB275A13 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E7523F477F4D389E83E7DDC2 /* Pods_SDPathKalmanFilter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDPathKalmanFilter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABF8C2C1B3042A100F42F59 /* SDPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPathViewController.h; sourceTree = "<group>"; };
+		EABF8C2D1B3042A100F42F59 /* SDPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPathViewController.m; sourceTree = "<group>"; };
+		EABF8C2F1B30436500F42F59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EE67A7576390BFE03DCCCEA1 /* SDPathKalmanFilter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDPathKalmanFilter.podspec; path = ../SDPathKalmanFilter.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +81,7 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				EABF8C301B30436500F42F59 /* MapKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				92066D6A5A1FC491AACD6D34 /* Pods_SDPathKalmanFilter_Example.framework in Frameworks */,
 			);
@@ -130,6 +136,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EABF8C2F1B30436500F42F59 /* MapKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -195,6 +202,8 @@
 		62DD24D1C720BEF419D1FB35 /* PathView */ = {
 			isa = PBXGroup;
 			children = (
+				EABF8C2C1B3042A100F42F59 /* SDPathViewController.h */,
+				EABF8C2D1B3042A100F42F59 /* SDPathViewController.m */,
 			);
 			path = PathView;
 			sourceTree = "<group>";
@@ -266,6 +275,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Marek Matulski";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -412,6 +428,7 @@
 			files = (
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				62DD26BBFDED41ACF1B7BB6C /* SDAppDelegate.m in Sources */,
+				EABF8C2E1B3042A100F42F59 /* SDPathViewController.m in Sources */,
 				62DD21705AA37D666A622FD7 /* SDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

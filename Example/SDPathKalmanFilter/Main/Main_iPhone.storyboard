@@ -23,6 +23,9 @@
                                 <state key="normal" title="EXAMPLE PATH">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0g0-iG-Dw7" kind="show" id="aLO-rp-X9x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79634547233581543" green="0.74273437261581421" blue="0.44418838620185852" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="246"/>
         </scene>
-        <!--View Controller-->
+        <!--Path View Controller-->
         <scene sceneID="35w-Ru-GFA">
             <objects>
-                <viewController id="0g0-iG-Dw7" sceneMemberID="viewController">
+                <viewController id="0g0-iG-Dw7" customClass="SDPathViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E1h-hH-7xu"/>
                         <viewControllerLayoutGuide type="bottom" id="FSh-im-epY"/>
@@ -47,12 +50,23 @@
                     <view key="view" contentMode="scaleToFill" id="i4E-7S-fTi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-mN-CRt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0g0-iG-Dw7" id="i1F-xS-NUM"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="SYg-mN-CRt" id="ANT-U1-P3S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ea-7W-usJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="888"/>
+            <point key="canvasLocation" x="1330" y="252"/>
         </scene>
     </scenes>
 </document>

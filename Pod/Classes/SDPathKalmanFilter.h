@@ -9,5 +9,7 @@
 @class CLLocation;
 
 @interface SDPathKalmanFilter : SDKalmanFilter
+
 - (CLLocation *)updateWithLocation:(CLLocation *)location;
+
 @end

@@ -13,13 +13,13 @@ static const double SDUnitsScaller = 1000.0;
 @interface SDPathKalmanFilter ()
 
 // Location for which last estimation was performed
-@property(strong, nonatomic) CLLocation *lastInputLocation;
+@property (strong, nonatomic) CLLocation *lastInputLocation;
 
 // Location for which estimation will be performed
-@property(strong, nonatomic) CLLocation *currentInputLocation;
+@property (strong, nonatomic) CLLocation *currentInputLocation;
 
 // Result of last estimation
-@property(nonatomic, strong) CLLocation *lastEstimatedLocation;
+@property (strong, nonatomic) CLLocation *lastEstimatedLocation;
 
 @end
 
