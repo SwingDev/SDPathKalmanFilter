@@ -14,37 +14,37 @@
 
 @property (nonatomic, readonly) NSUInteger observationDimension;
 
-@property (nonatomic, strong) SDMatrix *stateTransition;
+@property (strong, nonatomic) SDMatrix *stateTransition;
 
-@property (nonatomic, strong) SDMatrix *observationModel;
+@property (strong, nonatomic) SDMatrix *observationModel;
 
-@property (nonatomic, strong) SDMatrix *processNoiseCovariance;
+@property (strong, nonatomic) SDMatrix *processNoiseCovariance;
 
-@property (nonatomic, strong) SDMatrix *observationNoiseCovariance;
+@property (strong, nonatomic) SDMatrix *observationNoiseCovariance;
 
-@property (nonatomic, strong) SDMatrix *observation;
+@property (strong, nonatomic) SDMatrix *observation;
 
-@property (nonatomic, strong) SDMatrix *predictedState;
+@property (strong, nonatomic) SDMatrix *predictedState;
 
-@property (nonatomic, strong) SDMatrix *predictedEstimateCovariance;
+@property (strong, nonatomic) SDMatrix *predictedEstimateCovariance;
 
-@property (nonatomic, strong) SDMatrix *innovation;
+@property (strong, nonatomic) SDMatrix *innovation;
 
-@property (nonatomic, strong) SDMatrix *innovationCovariance;
+@property (strong, nonatomic) SDMatrix *innovationCovariance;
 
-@property (nonatomic, strong) SDMatrix *inverseInnovationCovariance;
+@property (strong, nonatomic) SDMatrix *inverseInnovationCovariance;
 
-@property (nonatomic, strong) SDMatrix *optimanlGain;
+@property (strong, nonatomic) SDMatrix *optimanlGain;
 
-@property (nonatomic, strong) SDMatrix *stateEstimate;
+@property (strong, nonatomic) SDMatrix *stateEstimate;
 
-@property (nonatomic, strong) SDMatrix *estimateCovariance;
+@property (strong, nonatomic) SDMatrix *estimateCovariance;
 
-@property (nonatomic, strong) SDMatrix *verticalScratch;
+@property (strong, nonatomic) SDMatrix *verticalScratch;
 
-@property (nonatomic, strong) SDMatrix *smallSquareScratch;
+@property (strong, nonatomic) SDMatrix *smallSquareScratch;
 
-@property (nonatomic, strong) SDMatrix *bigSquareScratch;
+@property (strong, nonatomic) SDMatrix *bigSquareScratch;
 
 - (instancetype)initWithStateDimension:(NSUInteger)stateDimension observationDimension:(NSUInteger)observationDimension;
 
