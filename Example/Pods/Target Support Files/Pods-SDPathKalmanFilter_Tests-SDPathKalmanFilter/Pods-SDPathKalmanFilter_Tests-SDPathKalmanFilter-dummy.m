@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_SDPathKalmanFilter_Tests_SDPathKalmanFilter : NSObject
-@end
-@implementation PodsDummy_Pods_SDPathKalmanFilter_Tests_SDPathKalmanFilter
-@end
