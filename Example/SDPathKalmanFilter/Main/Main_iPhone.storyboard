@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="246"/>
         </scene>
-        <!--Path View Controller-->
+        <!--Cached Path View Controller-->
         <scene sceneID="35w-Ru-GFA">
             <objects>
-                <viewController id="0g0-iG-Dw7" customClass="SDPathViewController" sceneMemberID="viewController">
+                <viewController id="0g0-iG-Dw7" customClass="SDCachedPathViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E1h-hH-7xu"/>
                         <viewControllerLayoutGuide type="bottom" id="FSh-im-epY"/>

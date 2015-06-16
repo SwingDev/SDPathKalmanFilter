@@ -66,7 +66,11 @@
 
     for(CLLocation *location in self.originalLocations){
         CLLocation *estimatedLocation = [self.pathKalmanFiler updateWithLocation:location];
-        [self.estimatedLocations addObject:estimatedLocation];
+        if(estimatedLocation){
+            [self.estimatedLocations addObject:estimatedLocation];
+        } else {
+            DDLogWarn(@"Filter could not estimate location");
+        }
     }
 }
 
