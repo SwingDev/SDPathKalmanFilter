@@ -97,7 +97,7 @@
 *
 * @return SDMatrix result of multiplication of this matrix with anotherMatrix.
 */
-- (SDMatrix *)multiplyWithMatrix:(SDMatrix *)anotherMatrix;
+- (SDMatrix *)matrixByMultiplicationWithMatrix:(SDMatrix *)anotherMatrix;
 
 /**
 * Creates new SDMatrix as a result of multiplication of this matrix with transposed anotherMatrix.
@@ -106,7 +106,7 @@
 *
 * @return SDMatrix result of multiplication of this matrix with transposed anotherMatrix.
 */
-- (SDMatrix *)multiplyWithTransposedMatrix:(SDMatrix *)anotherMatrix;
+- (SDMatrix *)matrixByMultiplicationWithTransposedMatrix:(SDMatrix *)anotherMatrix;
 
 /**
 * Adds matrix.

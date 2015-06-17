@@ -96,7 +96,7 @@
 
 #pragma mark - operations
 
-- (SDMatrix *)multiplyWithMatrix:(SDMatrix *)anotherMatrix {
+- (SDMatrix *)matrixByMultiplicationWithMatrix:(SDMatrix *)anotherMatrix {
 
     if(self.numberOfColumns != anotherMatrix.numberOfRows){
         return nil;
@@ -113,7 +113,7 @@
     return resultMatrix;
 }
 
-- (SDMatrix *)multiplyWithTransposedMatrix:(SDMatrix *)anotherMatrix {
+- (SDMatrix *)matrixByMultiplicationWithTransposedMatrix:(SDMatrix *)anotherMatrix {
 
     if(self.numberOfColumns != anotherMatrix.numberOfColumns){
         return nil;
