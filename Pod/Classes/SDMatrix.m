@@ -61,25 +61,21 @@
 }
 
 - (double)valueAtRow:(NSUInteger)row column:(NSUInteger)column {
-    [self checkIfIsNotOutOfBoundsIfRow:row andColumn:column];
+    if([self isOutOfBoundsIfRow:row andColumn:column]){
+        return 0;
+    }
+
     return _data[row * self.numberOfColumns + column];
 }
 
 - (void)setValue:(double)value n:(NSUInteger)n m:(NSUInteger)m{
-    [self checkIfIsNotOutOfBoundsIfRow:n andColumn:m];
-    _data[n * self.numberOfColumns + m] = value;
+    if(![self isOutOfBoundsIfRow:n andColumn:m]) {
+        _data[n * self.numberOfColumns + m] = value;
+    }
 }
 
-- (void)checkIfIsNotOutOfBoundsIfRow:(NSUInteger)n andColumn:(NSUInteger)m {
-    if(n >= _numberOfRows){
-        @throw [NSException exceptionWithName:@"IndexOutOfBoundException" reason:[NSString stringWithFormat:@"there is no such many rows (%zd >= %zd)", n, _numberOfRows]
-                                     userInfo:nil];
-    }
-
-    if(m >= _numberOfColumns){
-        @throw [NSException exceptionWithName:@"IndexOutOfBoundException" reason:[NSString stringWithFormat:@"there is no such many columns (%zd >= %zd)", m, _numberOfColumns]
-                                     userInfo:nil];
-    }
+- (BOOL)isOutOfBoundsIfRow:(NSUInteger)n andColumn:(NSUInteger)m {
+    return n >= _numberOfRows || m >= _numberOfColumns;
 }
 
 - (void)makeIdentity {
@@ -91,6 +87,10 @@
 }
 
 - (SDMatrix *)multiplyWithMatrix:(SDMatrix *)anotherMatrix {
+
+    if(self.numberOfColumns != anotherMatrix.numberOfRows){
+        return nil;
+    }
 
     int m = (int)self.numberOfRows;
     int k = (int)self.numberOfColumns;
