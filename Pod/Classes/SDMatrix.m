@@ -105,6 +105,23 @@
     return resultMatrix;
 }
 
+- (SDMatrix *)multiplyWithTransposedMatrix:(SDMatrix *)anotherMatrix {
+
+    if(self.numberOfColumns != anotherMatrix.numberOfColumns){
+        return nil;
+    }
+
+    int m = (int)self.numberOfRows;
+    int k = (int)self.numberOfColumns;
+    int n = (int)anotherMatrix.numberOfRows;
+
+    SDMatrix *resultMatrix = [SDMatrix matrixWithNumberOfRows:self.numberOfRows numberOfColumns:anotherMatrix.numberOfRows];
+    cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasTrans,
+            m, n, k, 1, self.data, k, anotherMatrix.data, (int)anotherMatrix.numberOfColumns, 1,
+            resultMatrix.data, n);
+    return resultMatrix;
+}
+
 - (void)scale:(double)factor
 {
     NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);

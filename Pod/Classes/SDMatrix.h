@@ -94,6 +94,15 @@
 - (SDMatrix *)multiplyWithMatrix:(SDMatrix *)anotherMatrix;
 
 /**
+* Creates new SDMatrix as a result of multiplication of this matrix with transposed anotherMatrix.
+*
+* @param anotherMatrix SDMatrix.
+*
+* @return SDMatrix result of multiplication of this matrix with transposed anotherMatrix.
+*/
+- (SDMatrix *)multiplyWithTransposedMatrix:(SDMatrix *)anotherMatrix;
+
+/**
 * Scales all matrix items with double value.
 *
 * @param factor double all matrix items will be multiplied with this value.
