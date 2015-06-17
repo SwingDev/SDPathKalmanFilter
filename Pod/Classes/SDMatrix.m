@@ -154,6 +154,24 @@
     return nil;
 }
 
+- (BOOL)subtractMatrix:(SDMatrix *)matrixToSubtract {
+    if(self.numberOfRows != matrixToSubtract.numberOfRows || self.numberOfColumns != matrixToSubtract.numberOfColumns){
+        return NO;
+    }
+
+    cblas_daxpy(self.numberOfRows * self.numberOfColumns, -1, matrixToSubtract.data, 1, self.data, 1);
+    return YES;
+}
+
+- (SDMatrix *)matrixBySubtractionOfMatrix:(SDMatrix *)matrixToSubtract {
+    SDMatrix *matrix = [self copy];
+    if([matrix subtractMatrix:matrixToSubtract]){
+        return matrix;
+    }
+
+    return nil;
+}
+
 #pragma mark - Compare
 
 - (BOOL)isEqual:(id)other {

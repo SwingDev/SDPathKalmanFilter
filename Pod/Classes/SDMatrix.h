@@ -109,6 +109,13 @@
 - (SDMatrix *)matrixByMultiplicationWithTransposedMatrix:(SDMatrix *)anotherMatrix;
 
 /**
+* Scales all matrix items with double value.
+*
+* @param factor double all matrix items will be multiplied with this value.
+*/
+- (void)scale:(double)factor;
+
+/**
 * Adds matrix.
 *
 * @param anotherMatrix SDMatrix matrix to add.
@@ -127,11 +134,24 @@
 - (SDMatrix *)matrixByAdditionOfMatrix:(SDMatrix *)matrix;
 
 /**
-* Scales all matrix items with double value.
+* Subtract matrix.
 *
-* @param factor double all matrix items will be multiplied with this value.
+* @param anotherMatrix SDMatrix matrix to subtract.
+*
+* @return BOOL - true if subtraction was performed successfully, otherwise false.
 */
-- (void)scale:(double)factor;
+- (BOOL)subtractMatrix:(SDMatrix *)matrix;
+
+/**
+* Creates new SDMatrix as a result of subtraction of another matrix from this matrix.
+*
+* @param anotherMatrix SDMatrix matrix to subtract.
+*
+* @return SDMatrix result of subtraction of another matrix from this matrix.
+*/
+- (SDMatrix *)matrixBySubtractionOfMatrix:(SDMatrix *)matrix;
+
+#pragma mark - Compare
 
 /**
 * Checks if all matrix elements are equal to adequate elements of another matrix.
