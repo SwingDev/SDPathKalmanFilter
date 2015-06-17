@@ -138,4 +138,33 @@
     XCTAssertEqualObjects(matrixC, matrixExpected, @"Multiplication result matrix is not equal to expected one");
 }
 
+- (void)testMatrixAddition
+{
+    double dataForMatrixA[6] = {
+            1, -2,
+            -3,  4,
+            5, -6
+    };
+
+    double dataForMatrixB[6] = {
+            -4,  2,
+            -2,  3,
+            5, -7,
+    };
+
+    double dataForExpectedMatrix[6] = {
+            -3,  0,
+            -5,  7,
+            10, -13
+    };
+
+    SDMatrix *matrixA = [SDMatrix matrixWithData:dataForMatrixA withNumberOfRows:3 numberOfColumns:2];
+    SDMatrix *matrixB = [SDMatrix matrixWithData:dataForMatrixB withNumberOfRows:3 numberOfColumns:2];
+    SDMatrix *matrixExpected = [SDMatrix matrixWithData:dataForExpectedMatrix withNumberOfRows:3 numberOfColumns:2];
+
+    SDMatrix *matrixC = [matrixA matrixByAdditionOfMatrix:matrixB];
+
+    XCTAssertEqualObjects(matrixC, matrixExpected, @"Addition result matrix is not equal to expected one");
+}
+
 @end

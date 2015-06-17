@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SDMatrix : NSObject
+@interface SDMatrix : NSObject <NSCopying>
 
 /**
  * Number of rows in matrix.
@@ -60,6 +60,8 @@
 */
 + (instancetype)matrixWithData:(double *)inputData withNumberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns;
 
+#pragma mark - accessing items
+
 /**
 * Returns matrix item at specified row and column.
 *
@@ -79,10 +81,14 @@
 */
 - (void)setValue:(double)value atRow:(NSUInteger)row andColumn:(NSUInteger)column;
 
+#pragma mark - modifications
+
 /**
 * Updates all matrix items to make this matrix identity matrix.
 */
 - (void)makeIdentity;
+
+#pragma mark - operations
 
 /**
 * Creates new SDMatrix as a result of multiplication of this matrix with anotherMatrix.
@@ -101,6 +107,24 @@
 * @return SDMatrix result of multiplication of this matrix with transposed anotherMatrix.
 */
 - (SDMatrix *)multiplyWithTransposedMatrix:(SDMatrix *)anotherMatrix;
+
+/**
+* Adds matrix.
+*
+* @param anotherMatrix SDMatrix matrix to add.
+*
+* @return BOOL - true if addition was performed successfully, otherwise false.
+*/
+- (BOOL)addMatrix:(SDMatrix *)matrix;
+
+/**
+* Creates new SDMatrix as a result of addition of another matrix to this matrix.
+*
+* @param anotherMatrix SDMatrix matrix to add.
+*
+* @return SDMatrix result of addition of another matrix to this matrix.
+*/
+- (SDMatrix *)matrixByAdditionOfMatrix:(SDMatrix *)matrix;
 
 /**
 * Scales all matrix items with double value.

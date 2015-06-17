@@ -8,7 +8,7 @@
 
 @interface SDMatrix ()
 
-@property(nonatomic) double *data;
+@property(nonatomic, readonly) double *data;
 
 @end
 
@@ -25,7 +25,7 @@
         NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);
         double *data = malloc(size);
         memset(data, 0, size);
-        self.data = data;
+        _data = data;
     }
 
     return self;
@@ -50,7 +50,7 @@
         NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);
         double *data = malloc(size);
         memcpy(data, inputData, size);
-        self.data = data;
+        _data = data;
     }
 
     return self;
@@ -59,6 +59,12 @@
 + (instancetype)matrixWithData:(double*)inputData withNumberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns {
     return [[self alloc] initWithData:inputData withNumberOfRows:numberOfRows numberOfColumns:numberOfColumns];
 }
+
+- (id)copyWithZone:(NSZone *)zone {
+    return [[SDMatrix alloc] initWithData:self.data withNumberOfRows:self.numberOfRows numberOfColumns:self.numberOfColumns];
+}
+
+#pragma mark - accessing items
 
 - (double)valueAtRow:(NSUInteger)row column:(NSUInteger)column {
     if([self isOutOfBoundsIfRow:row andColumn:column]){
@@ -77,6 +83,8 @@
 - (BOOL)isOutOfBoundsIfRow:(NSUInteger)n andColumn:(NSUInteger)m {
     return n >= self.numberOfRows || m >= self.numberOfColumns;
 }
+
+#pragma mark - modifications
 
 - (void)makeIdentity {
     for(NSUInteger n = 0; n < self.numberOfRows; n++){
@@ -126,6 +134,24 @@
 {
     NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);
     cblas_dscal((int)size, factor, self.data, 1);
+}
+
+- (BOOL)addMatrix:(SDMatrix *)matrixToAdd {
+    if(self.numberOfRows != matrixToAdd.numberOfRows || self.numberOfColumns != matrixToAdd.numberOfColumns){
+        return NO;
+    }
+
+    cblas_daxpy(self.numberOfRows * self.numberOfColumns, 1, matrixToAdd.data, 1, self.data, 1);
+    return YES;
+}
+
+- (SDMatrix *)matrixByAdditionOfMatrix:(SDMatrix *)matrixToAdd {
+    SDMatrix *matrix = [self copy];
+    if([matrix addMatrix:matrixToAdd]){
+        return matrix;
+    }
+
+    return nil;
 }
 
 #pragma mark - Compare
@@ -179,7 +205,6 @@
 
     return description;
 }
-
 
 - (void)dealloc {
     if(_data){
