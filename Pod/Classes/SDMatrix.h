@@ -151,13 +151,39 @@
 */
 - (SDMatrix *)matrixBySubtractionOfMatrix:(SDMatrix *)matrix;
 
+/**
+* Inverts matrix.
+*
+* @return BOOL - true if inversion was performed successfully, otherwise false.
+*/
+- (BOOL)invertMatrix;
+
+/**
+* Creates new inverted SDMatrix.
+*
+* @return SDMatrix result of inversion.
+*/
+- (SDMatrix *)matrixByInvertion;
+
 #pragma mark - Compare
 
 /**
 * Checks if all matrix elements are equal to adequate elements of another matrix.
 *
 * @param anotherMatrix SDMatrix to compare.
+*
+* @return BOOL true if are equal
 */
 - (BOOL)isEqualToMatrix:(SDMatrix *)anotherMatrix;
+
+/**
+* Checks if all matrix elements are not more different than desired precision from adequate elements of another matrix.
+*
+* @param anotherMatrix SDMatrix to compare.
+* @param precision double limit for difference between items which exceeding will fail this checking.
+*
+* @return TRUE if all values do not differ more than desired precision
+*/
+- (BOOL)isEqualToMatrix:(SDMatrix *)other withPrecision:(double)precision;
 
 @end

@@ -167,8 +167,7 @@
     XCTAssertEqualObjects(matrixC, matrixExpected, @"Addition result matrix is not equal to expected one");
 }
 
-- (void)testMatrixSubtraction
-{
+- (void)testMatrixSubtraction{
     double dataForMatrixA[6] = {
             1, -2,
             -3,  4,
@@ -194,6 +193,58 @@
     SDMatrix *matrixC = [matrixA matrixBySubtractionOfMatrix:matrixB];
 
     XCTAssertEqualObjects(matrixC, matrixExpected, @"Subtraction result matrix is not equal to expected one");
+}
+
+- (void)testMatrixInvertion_A2x2 {
+
+    double dataForMatrixA[4] = {
+            1, -2,
+            -3,  4,
+    };
+
+    SDMatrix *matrixA = [SDMatrix matrixWithData:dataForMatrixA withNumberOfRows:2 numberOfColumns:2];
+    SDMatrix *matrixExpected = [SDMatrix matrixWithNumberOfRows:2 numberOfColumns:2];
+    [matrixExpected makeIdentity];
+
+    SDMatrix *matrixB = [matrixA matrixByInvertion];
+    SDMatrix *matrixC = [matrixA matrixByMultiplicationWithMatrix:matrixB];
+
+    XCTAssertEqualObjects(matrixC, matrixExpected, @"Matrix multipied by inverted matrix is not equal to expected one");
+}
+
+- (void)testMatrixInvertion_A2x2_double {
+
+    double dataForMatrixA[4] = {
+            0.43, -2.12,
+            -3.999,  4.45,
+    };
+
+    SDMatrix *matrixA = [SDMatrix matrixWithData:dataForMatrixA withNumberOfRows:2 numberOfColumns:2];
+    SDMatrix *matrixExpected = [SDMatrix matrixWithNumberOfRows:2 numberOfColumns:2];
+    [matrixExpected makeIdentity];
+
+    SDMatrix *matrixB = [matrixA matrixByInvertion];
+    SDMatrix *matrixC = [matrixA matrixByMultiplicationWithMatrix:matrixB];
+
+    XCTAssertEqualObjects(matrixC, matrixExpected, @"Matrix multipied by inverted matrix is not equal to expected one");
+}
+
+- (void)testMatrixInvertion_A3x3 {
+
+    double dataForMatrixA[9] = {
+            1, -2, 5,
+            -3,  4, 8,
+            -1, 2, 6
+    };
+
+    SDMatrix *matrixA = [SDMatrix matrixWithData:dataForMatrixA withNumberOfRows:3 numberOfColumns:3];
+    SDMatrix *matrixExpected = [SDMatrix matrixWithNumberOfRows:3 numberOfColumns:3];
+    [matrixExpected makeIdentity];
+
+    SDMatrix *matrixB = [matrixA matrixByInvertion];
+    SDMatrix *matrixC = [matrixA matrixByMultiplicationWithMatrix:matrixB];
+    
+    XCTAssertTrue([matrixC isEqualToMatrix:matrixExpected withPrecision:0.00000001], @"Matrix multipied by inverted matrix is not equal to expected one");
 }
 
 @end

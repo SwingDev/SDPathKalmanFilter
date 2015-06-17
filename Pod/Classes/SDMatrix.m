@@ -172,6 +172,52 @@
     return nil;
 }
 
+- (BOOL)invertMatrix {
+    if(self.numberOfRows != self.numberOfColumns){
+        return NO;
+    }
+
+    int N = self.numberOfRows;
+    NSUInteger pivotSize = self.numberOfRows * sizeof(int);
+    NSUInteger workspaceSize = self.numberOfRows * sizeof(double);
+    int *pivot = malloc(pivotSize);
+    double *workspace = malloc(workspaceSize);
+
+    int error = 0;
+
+    /*  LU factorisation */
+    dgetrf_(&N, &N, self.data, &N, pivot, &error);
+
+    if (error != 0) {
+        free(pivot);
+        free(workspace);
+        return NO;
+    }
+
+    /*  matrix inversion */
+    dgetri_(&N, self.data, &N, pivot, workspace, &N, &error);
+
+    if (error != 0) {
+        free(pivot);
+        free(workspace);
+        return NO;
+    }
+
+    free(pivot);
+    free(workspace);
+    return YES;
+}
+
+- (SDMatrix *)matrixByInvertion {
+    SDMatrix *matrix = [self copy];
+    if([matrix invertMatrix]){
+        return matrix;
+    }
+
+    return nil;
+}
+
+
 #pragma mark - Compare
 
 - (BOOL)isEqual:(id)other {
@@ -188,6 +234,11 @@
 
 - (BOOL)isEqualToMatrix:(SDMatrix *)anotherMatrix
 {
+    return [self isEqualToMatrix:anotherMatrix withPrecision:0];
+}
+
+- (BOOL)isEqualToMatrix:(SDMatrix *)anotherMatrix withPrecision:(double)precision
+{
     if(self.numberOfRows != anotherMatrix.numberOfRows){
         return NO;
     }
@@ -198,7 +249,8 @@
 
     for(NSUInteger n = 0; n < self.numberOfRows; n++){
         for(NSUInteger m = 0; m < self.numberOfColumns; m++){
-            if([self valueAtRow:n column:m] != [anotherMatrix valueAtRow:n column:m]){
+            double diff = [self valueAtRow:n column:m] - [anotherMatrix valueAtRow:n column:m];
+            if(fabs(diff) > precision){
                 return NO;
             }
         }
