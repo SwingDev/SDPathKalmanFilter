@@ -20,6 +20,7 @@
 
 
         _stateTransition = [SDMatrix matrixWithNumberOfRows:_stateDimension numberOfColumns:_stateDimension];
+        [_stateTransition makeIdentity];
 
         _observationModel = [SDMatrix matrixWithNumberOfRows:_observationDimension numberOfColumns:_stateDimension];
 

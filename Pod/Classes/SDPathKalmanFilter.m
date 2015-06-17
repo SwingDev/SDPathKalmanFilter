@@ -10,6 +10,9 @@
 // All units will be scalled with this value
 static const double SDUnitsScaller = 1000.0;
 
+static const double SDNoiseFactor = 0.000001;
+
+
 @interface SDPathKalmanFilter ()
 
 // Location for which last estimation was performed
@@ -31,6 +34,22 @@ static const double SDUnitsScaller = 1000.0;
     self = [super initWithStateDimension:4 observationDimension:2];
     if (self) {
 
+        [self updateStateTransitionMatrixWithTimeSinceLastUpdate:1];
+
+        [self.observationModel setValue:1 atRow:0 andColumn:0];
+        [self.observationModel setValue:1 atRow:1 andColumn:1];
+
+        /* Noise in the world. */
+        [self.processNoiseCovariance makeIdentity];
+        [self.processNoiseCovariance setValue:SDNoiseFactor atRow:0 andColumn:0];
+        [self.processNoiseCovariance setValue:SDNoiseFactor atRow:1 andColumn:1];
+
+        [self.observationNoiseCovariance makeIdentity];
+        [self.observationNoiseCovariance scale:SDNoiseFactor * 120.0];
+
+        double trillion = 1000.0 * 1000.0 * 1000.0 * 1000.0;
+        [self.estimateCovariance makeIdentity];
+        [self.estimateCovariance scale:trillion];
     }
 
     return self;
@@ -52,8 +71,8 @@ static const double SDUnitsScaller = 1000.0;
 
     [self updateStateTransitionMatrixWithTimeSinceLastUpdate:timeSinceLastUpdate];
 
-    [self.observation setValue:self.currentInputLocation.coordinate.latitude n:0 m:0];
-    [self.observation setValue:self.currentInputLocation.coordinate.longitude n:1 m:0];
+    [self.observation setValue:self.currentInputLocation.coordinate.latitude atRow:0 andColumn:0];
+    [self.observation setValue:self.currentInputLocation.coordinate.longitude atRow:1 andColumn:0];
 
     [self update];
 
@@ -62,8 +81,8 @@ static const double SDUnitsScaller = 1000.0;
 }
 
 - (void)updateStateTransitionMatrixWithTimeSinceLastUpdate:(NSTimeInterval)timeSinceLastUpdate {
-    [self.stateTransition setValue:timeSinceLastUpdate/SDUnitsScaller n:0 m:2];
-    [self.stateTransition setValue:timeSinceLastUpdate/SDUnitsScaller n:1 m:3];
+    [self.stateTransition setValue:timeSinceLastUpdate / SDUnitsScaller atRow:0 andColumn:2];
+    [self.stateTransition setValue:timeSinceLastUpdate / SDUnitsScaller atRow:1 andColumn:3];
 }
 
 @end
