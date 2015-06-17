@@ -65,17 +65,17 @@
         return 0;
     }
 
-    return _data[row * self.numberOfColumns + column];
+    return self.data[row * self.numberOfColumns + column];
 }
 
-- (void)setValue:(double)value n:(NSUInteger)n m:(NSUInteger)m{
-    if(![self isOutOfBoundsIfRow:n andColumn:m]) {
-        _data[n * self.numberOfColumns + m] = value;
+- (void)setValue:(double)value atRow:(NSUInteger)row andColumn:(NSUInteger)column {
+    if(![self isOutOfBoundsIfRow:row andColumn:column]) {
+        self.data[row * self.numberOfColumns + column] = value;
     }
 }
 
 - (BOOL)isOutOfBoundsIfRow:(NSUInteger)n andColumn:(NSUInteger)m {
-    return n >= _numberOfRows || m >= _numberOfColumns;
+    return n >= self.numberOfRows || m >= self.numberOfColumns;
 }
 
 - (void)makeIdentity {
@@ -85,6 +85,8 @@
         }
     }
 }
+
+#pragma mark - operations
 
 - (SDMatrix *)multiplyWithMatrix:(SDMatrix *)anotherMatrix {
 
@@ -98,10 +100,18 @@
 
     SDMatrix *resultMatrix = [SDMatrix matrixWithNumberOfRows:self.numberOfRows numberOfColumns:anotherMatrix.numberOfColumns];
     cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans,
-            m, n, k, 1, _data, k, anotherMatrix.data, n, 1,
+            m, n, k, 1, self.data, k, anotherMatrix.data, n, 1,
             resultMatrix.data, n);
     return resultMatrix;
 }
+
+- (void)scale:(double)factor
+{
+    NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);
+    cblas_dscal((int)size, factor, self.data, 1);
+}
+
+#pragma mark - Compare
 
 - (BOOL)isEqual:(id)other {
     if (other == self){
@@ -115,19 +125,19 @@
     return [self isEqualToMatrix:(SDMatrix *)other];
 }
 
-- (BOOL)isEqualToMatrix:(SDMatrix *)matrix
+- (BOOL)isEqualToMatrix:(SDMatrix *)anotherMatrix
 {
-    if(self.numberOfRows != matrix.numberOfRows){
+    if(self.numberOfRows != anotherMatrix.numberOfRows){
         return NO;
     }
 
-    if(self.numberOfColumns != matrix.numberOfColumns){
+    if(self.numberOfColumns != anotherMatrix.numberOfColumns){
         return NO;
     }
 
     for(NSUInteger n = 0; n < self.numberOfRows; n++){
         for(NSUInteger m = 0; m < self.numberOfColumns; m++){
-            if([self valueAtRow:n column:m] != [matrix valueAtRow:n column:m]){
+            if([self valueAtRow:n column:m] != [anotherMatrix valueAtRow:n column:m]){
                 return NO;
             }
         }
@@ -140,7 +150,7 @@
     NSMutableString *description = [NSMutableString stringWithFormat:@"<%@: ", NSStringFromClass([self class])];
 
     [description appendString:@">"];
-    [description appendFormat:@"\n[%lu, %lu]", (unsigned long)self.numberOfRows, self.numberOfColumns];
+    [description appendFormat:@"\n[%lu, %lu]", (unsigned long)self.numberOfRows, (unsigned long)self.numberOfColumns];
 
     for(NSUInteger n = 0; n < self.numberOfRows; n++){
         for(NSUInteger m = 0; m < self.numberOfColumns; m++){
@@ -159,6 +169,5 @@
         free(_data);
     }
 }
-
 
 @end
