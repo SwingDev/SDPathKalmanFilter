@@ -48,6 +48,8 @@
 
 - (instancetype)initWithStateDimension:(NSUInteger)stateDimension observationDimension:(NSUInteger)observationDimension;
 
+- (void)update;
+
 + (instancetype)filterWithStateDimension:(NSUInteger)stateDimension observationDimension:(NSUInteger)observationDimension;
 
 @end

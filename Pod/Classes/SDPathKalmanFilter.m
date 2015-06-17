@@ -36,7 +36,7 @@ static const double SDUnitsScaller = 1000.0;
     return self;
 }
 
-- (CLLocation *)updateWithLocation:(CLLocation *)location{
+- (CLLocation *)updateWithLocation:(CLLocation *)location {
     self.currentInputLocation = location;
     
     [self updateVelocity];
@@ -44,7 +44,7 @@ static const double SDUnitsScaller = 1000.0;
     return self.lastEstimatedLocation;
 }
 
-- (void)updateVelocity{
+- (void)updateVelocity {
     NSTimeInterval timeSinceLastUpdate = 1.0f;
     if(self.lastInputLocation){
         timeSinceLastUpdate = [self.currentInputLocation.timestamp timeIntervalSince1970] - [self.lastInputLocation.timestamp timeIntervalSince1970];
@@ -61,22 +61,9 @@ static const double SDUnitsScaller = 1000.0;
     self.currentInputLocation = nil;
 }
 
-- (void)updateStateTransitionMatrixWithTimeSinceLastUpdate:(NSTimeInterval)timeSinceLastUpdate{
+- (void)updateStateTransitionMatrixWithTimeSinceLastUpdate:(NSTimeInterval)timeSinceLastUpdate {
     [self.stateTransition setValue:timeSinceLastUpdate/SDUnitsScaller n:0 m:2];
     [self.stateTransition setValue:timeSinceLastUpdate/SDUnitsScaller n:1 m:3];
-}
-
-- (void)update{
-    [self predicate];
-    [self estimate];
-}
-
-- (void)predicate {
-
-}
-
-- (void)estimate {
-
 }
 
 @end

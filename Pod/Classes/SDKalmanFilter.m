@@ -60,4 +60,21 @@
     return [[self alloc] initWithStateDimension:stateDimension observationDimension:observationDimension];
 }
 
+- (void)update {
+    [self predicate];
+    [self estimate];
+}
+
+- (void)predicate {
+
+    /* Predict the state */
+    self.predictedState = [self.stateTransition multiplyWithMatrix:self.stateEstimate];
+
+    /* Predict the state estimate covariance */
+}
+
+- (void)estimate {
+
+}
+
 @end
