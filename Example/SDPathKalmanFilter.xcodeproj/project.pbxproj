@@ -228,11 +228,11 @@
 		62DD2E67709611422C49A169 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				62DD2FBD935ACA6E8E78BDAB /* SDViewController.h */,
 				62DD269CB2CCD361DDAAFAB3 /* SDAppDelegate.h */,
 				62DD2D99AC2D9A8D160B8E87 /* SDAppDelegate.m */,
 				62DD2F8C6E4C84B3E339C720 /* Main.storyboard */,
 				62DD2070BA4C67595EEA4E2D /* Main_iPhone.storyboard */,
+				62DD2FBD935ACA6E8E78BDAB /* SDViewController.h */,
 				62DD277A4F1F6D1DC5C49E7B /* SDViewController.m */,
 			);
 			path = Main;

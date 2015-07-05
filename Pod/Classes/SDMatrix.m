@@ -132,8 +132,7 @@
 
 - (void)scale:(double)factor
 {
-    NSUInteger size = self.numberOfRows * self.numberOfColumns * sizeof(double);
-    cblas_dscal((int)size, factor, self.data, 1);
+    cblas_dscal(self.numberOfRows * self.numberOfColumns, factor, self.data, 1);
 }
 
 - (BOOL)addMatrix:(SDMatrix *)matrixToAdd {
@@ -177,7 +176,7 @@
         return NO;
     }
 
-    int N = self.numberOfRows;
+    int N = (int)self.numberOfRows;
     NSUInteger pivotSize = self.numberOfRows * sizeof(int);
     NSUInteger workspaceSize = self.numberOfRows * sizeof(double);
     int *pivot = malloc(pivotSize);

@@ -71,10 +71,15 @@ static const double SDNoiseFactor = 0.000001;
 
     [self updateStateTransitionMatrixWithTimeSinceLastUpdate:timeSinceLastUpdate];
 
-    [self.observation setValue:self.currentInputLocation.coordinate.latitude atRow:0 andColumn:0];
-    [self.observation setValue:self.currentInputLocation.coordinate.longitude atRow:1 andColumn:0];
+    [self.observation setValue:self.currentInputLocation.coordinate.latitude * SDUnitsScaller atRow:0 andColumn:0];
+    [self.observation setValue:self.currentInputLocation.coordinate.longitude * SDUnitsScaller atRow:1 andColumn:0];
 
     [self update];
+
+    double latitide = [self.stateEstimate valueAtRow:0 column:0]/SDUnitsScaller;
+    double lontitude = [self.stateEstimate valueAtRow:1 column:0]/SDUnitsScaller;
+
+    self.lastEstimatedLocation = [[CLLocation alloc] initWithLatitude:latitide longitude:lontitude];
 
     self.lastInputLocation = self.currentInputLocation;
     self.currentInputLocation = nil;
